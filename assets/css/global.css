@@ -1,0 +1,439 @@
+/* Universal */
+/* Gutter (col spacing) */
+/* Gutter all */
+.mkv-gx-1 > * {
+    margin: 1%;
+}
+
+.mkv-gx-2 > * {
+    margin: 2%;
+}
+
+/* Gutter horizontal */
+.mkv-gxh-1 > * {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.mkv-gxh-2 > * {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Gutter vertical */
+.mkv-gxv-1 > * {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.mkv-gxv-2 > * {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Gutter left */
+.mkv-gxl-1 > * {
+    margin-left: 1%;
+}
+
+.mkv-gxl-2 > * {
+    margin-left: 2%;
+}
+
+/* Gutter right */
+.mkv-gxr-1 > * {
+    margin-right: 1%;
+}
+
+.mkv-gxr-2 > * {
+    margin-right: 2%;
+}
+
+/* Gutter top */
+.mkv-gxt-1 > * {
+    margin-top: 1%;
+}
+
+.mkv-gxt-2 > * {
+    margin-top: 2%;
+}
+
+
+/* Gutter bottom */
+.mkv-gxb-1 > * {
+    margin-bottom: 1%;
+}
+
+.mkv-gxb-2 > * {
+    margin-bottom: 2%;
+}
+
+.horizontal-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-stack-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+    Variables
+*/
+
+:root {
+    /* Element size */
+    --xxlg-size: 70px;
+    --xlg-size: 60px;
+    --lg-size: 50px;
+    --md-size: 40px;
+    --sm-size: 30px;
+    --xsm-size: 20px;
+
+    /* Font size */
+    --xxlg-font-size: 35px;
+    --xlg-font-size: 30px;
+    --lg-font-size: 25px;
+    --md-font-size: 20px;
+    --sm-font-size: 16px;
+    --xsm-font-size: 10px;
+
+    /* Transition duration */
+    --xxlg-time: 2s;
+    --xlg-time: 1.5s;
+    --lg-time: 1s;
+    --md-time: .5s;
+    --sh-time: .25s;
+    --xsh-time: .15s;
+
+    --size-1: 5px;
+    --size-2: 10px;
+    --size-3: 15px;
+    --size-4: 20px;
+    --size-5: 25px;
+    --size-6: 30px;
+    --size-7: 35px;
+    --size-8: 40px;
+    --size-9: 45px;
+    --size-10: 50px;
+}
+
+/*
+    Mkv's Custom size
+*/
+.mkv-hw-1 {
+
+}
+
+/*
+    Mkv's Custom Padding
+*/
+.mkv-ph-1 {
+    padding-left: var(--size-1);
+    padding-right: var(--size-1);
+}
+
+.mkv-ph-2 {
+    padding-left: var(--size-2);
+    padding-right: var(--size-2);
+}
+
+.mkv-ph-3 {
+    padding-left: var(--size-3);
+    padding-right: var(--size-3);
+}
+
+.mkv-ph-4 {
+    padding-left: var(--size-4);
+    padding-right: var(--size-4);
+}
+
+.mkv-ph-5 {
+    padding-left: var(--size-5);
+    padding-right: var(--size-5);
+}
+
+.mkv-ph-6 {
+    padding-left: var(--size-6);
+    padding-right: var(--size-6);
+}
+
+.mkv-ph-7 {
+    padding-left: var(--size-7);
+    padding-right: var(--size-7);
+}
+
+.mkv-ph-8 {
+    padding-left: var(--size-8);
+    padding-right: var(--size-8);
+}
+
+.mkv-ph-9 {
+    padding-left: var(--size-9);
+    padding-right: var(--size-9);
+}
+
+.mkv-ph-10 {
+    padding-left: var(--size-10);
+    padding-right: var(--size-10);
+}
+
+.mkv-pv-1 {
+    padding-top: var(--size-1);
+    padding-bottom: var(--size-1);
+}
+
+.mkv-pv-2 {
+    padding-top: var(--size-2);
+    padding-bottom: var(--size-2);
+}
+
+.mkv-pv-3 {
+    padding-top: var(--size-3);
+    padding-bottom: var(--size-3);
+}
+
+.mkv-pv-4 {
+    padding-top: var(--size-4);
+    padding-bottom: var(--size-4);
+}
+
+.mkv-pv-5 {
+    padding-top: var(--size-5);
+    padding-bottom: var(--size-5);
+}
+
+.mkv-pv-6 {
+    padding-top: var(--size-6);
+    padding-bottom: var(--size-6);
+}
+
+.mkv-pv-7 {
+    padding-top: var(--size-7);
+    padding-bottom: var(--size-7);
+}
+
+.mkv-pv-8 {
+    padding-top: var(--size-8);
+    padding-bottom: var(--size-8);
+}
+
+.mkv-pv-9 {
+    padding-top: var(--size-9);
+    padding-bottom: var(--size-9);
+}
+
+.mkv-pv-10 {
+    padding-top: var(--size-10);
+    padding-bottom: var(--size-10);
+}
+
+/*
+    Mkv's Custom Button
+ */
+
+.mkv-btn-xxlg {
+    width: var(--xxlg-size);
+    height: var(--xxlg-size);
+    font-size: var(--xxlg-font-size);
+    padding: 0;
+    border: 0;
+}
+
+.mkv-btn-xlg {
+    width: var(--xlg-size);
+    height: var(--xlg-size);
+    font-size: var(--xlg-font-size);
+    padding: 0;
+    border: 0;
+}
+
+.mkv-btn-lg {
+    width: var(--lg-size);
+    height: var(--lg-size);
+    font-size: var(--lg-font-size);
+    padding: 0;
+    border: 0;
+}
+
+.mkv-btn-md {
+    width: var(--md-size);
+    height: var(--md-size);
+    font-size: var(--md-font-size);
+    padding: 0;
+    border: 0;
+}
+
+.mkv-btn-sm {
+    width: var(--sm-size);
+    height: var(--sm-size);
+    font-size: var(--sm-font-size);
+    padding: 0;
+    border: 0;
+}
+
+.mkv-btn-xsm {
+    width: var(--xsm-size);
+    height: var(--xsm-size);
+    font-size: var(--xsm-font-size);
+    padding: 0;
+    border: 0;
+}
+
+.mkv-btn-sweet-green {
+    background-color: #11c767;
+    color: white;
+    border: 0;
+    transition: .15s;
+}
+
+.mkv-btn-sweet-green:hover {
+    background-color: #0ead59;
+    transition: .15s;
+    color: white;
+}
+
+.mkv-btn-sweet-green-inverted {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    transition: .15s;
+}
+
+.mkv-btn-sweet-green-inverted:hover {
+    background-color: #11c767;
+    color: white;
+    transition: .15s;
+}
+
+.mkv-btn-sweet-green-gradient {
+    background: rgb(15, 217, 112);
+    background: linear-gradient(90deg, rgb(15, 217, 112) 0%, rgba(11, 159, 82, 1) 100%);
+    color: white;
+    border: 0;
+    transition: .15s;
+}
+
+.mkv-btn-sweet-green-gradient:hover {
+    background: rgb(15, 217, 112);
+    background: linear-gradient(90deg, rgb(14, 187, 97) 0%, rgb(9, 120, 62) 100%);
+    color: white;
+    transition: .15s;
+}
+
+.mkv-btn-sweet-green-gradient-inverted {
+    background: transparent;
+    color: white;
+    border: 0;
+    transition: .15s;
+}
+
+.mkv-btn-sweet-green-gradient-inverted:hover {
+    background: rgb(15, 217, 112);
+    background: linear-gradient(90deg, rgb(15, 217, 112) 0%, rgba(11, 159, 82, 1) 100%);
+    color: white;
+    transition: .15s;
+}
+
+/*
+    Mkv's Custom Border
+*/
+.mkv-no-border {
+    border: 0;
+}
+
+.mkv-circular {
+    border-radius: 100px;
+}
+
+/*
+    Mkv's Custom Background
+*/
+.mkv-bg-calm-black {
+    background-color: #101010;
+    color: #ffffff;
+}
+
+.mkv-bg-calm-black-gradient {
+    background: linear-gradient(90deg, rgb(42, 42, 42) 0%, rgb(23, 23, 23) 100%);
+    color: #ffffff;
+}
+
+.mkv-bg-elegant-gray {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+.mkv-bg-elegant-gray-gradient {
+    background: linear-gradient(90deg, rgb(68, 68, 68) 0%, rgb(47, 47, 47) 100%);
+    color: #ffffff;
+}
+
+.mkv-bg-sweet-green {
+    background-color: #11c767;
+    color: #ffffff;
+}
+
+.mkv-bg-sweet-green-gradient {
+    background: linear-gradient(90deg, rgb(15, 217, 112) 0%, rgb(7, 142, 72) 100%);
+    color: #ffffff;
+}
+
+/*
+    Mkv's Custom Transition
+ */
+.mkv-transition-xlg {
+    transition: var(--xlg-time);
+}
+
+.mkv-transition-lg {
+    transition: var(--lg-time);
+}
+
+.mkv-transition-md {
+    transition: var(--md-time);
+}
+
+.mkv-transition-sh {
+    transition: var(--sh-time);
+}
+
+.mkv-transition-xsh {
+    transition: var(--xsh-time);
+}
+
+
