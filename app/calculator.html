@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Glew Calculator</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/glew_calculator/glew_calc_icon.ico"/>
+
+    <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
+    <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
+    <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/calculator.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+<body class=" ">
+<!-- loader Start -->
+<div id="loading">
+    <div id="loading-center">
+    </div>
+</div>
+<!-- loader END -->
+
+<div class="wrapper">
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-transparent fixed-top">
+        <button class="mkv-btn-xlg mkv-btn-sweet-green-inverted mkv-circular float-right"
+                onclick="location.href='../index.html'">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+    </nav>
+    <div class="row justify-content-center h-100">
+        <div class="card shadow-bottom" id="calc_card">
+            <div class="card-body">
+                <div class="row mt--3 justify-content-center">
+                    <div class="col-3"></div>
+                    <div class="col-6 bg-green" id="calc_card_ornament_top">‎</div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row justify-content-lg-start pt-2 pb-2">
+                    <div class="col">
+                        <span class="card-title font-size-20 font-weight-bold text-green">Glew Calculator</span>
+                        <span class="float-right text-green" data-toggle="tooltip" data-placement="bottom"
+                              title="App Version">0.1.0</span>
+                    </div>
+                </div>
+                <div class="row justify-content-lg-center pt-2 pb-2">
+                    <div class="col-12">
+                        <label>
+                            <input class="input-expression shadow-bottom" id="input-expression" type="text"
+                                   pattern="[A-Za-z]">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Result-->
+                <div class="row">
+                    <div class="col-12 bg">
+                        <button class="btn-sm float-right" id="copy-result" data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="Copy result"><i class="fa fa-copy"></i><span></span></button>
+                        <p class="font-size-20 text-gray float-right">= <span id="opt-calc-result"></span>&nbsp; &nbsp;
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-lg-start pb-2">
+                    <div class="col-8">
+                        <button class="input-shift" data-toggle="tooltip" data-placement="bottom"
+                                title="Being developed">Scientific Mode
+                        </button>
+                    </div>
+                    <div class="col-1">
+                        <button class="input-operator-sm" id="opt-swap-result">
+                            <i class="fa fa-sort"></i>
+                        </button>
+                    </div>
+                    <div class="col-1">
+                        <button class="input-operator-sm" id="opt-caret-left">
+                            <i class="fa fa-caret-left"></i>
+                        </button>
+                    </div>
+                    <div class="col-1">
+                        <button class="input-operator-sm" id="opt-caret-right">
+                            <i class="fa fa-caret-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Row 1 -->
+                <div class="row justify-content-lg-center pt-2 pb-2">
+                    <div class="col">
+                        <button class="input-number" value="0">0</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator" value="(">(</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator" value=")">)</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator" value="/">/</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator fa fa-arrow-left font-size-40" id="opt-del"></button>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="row justify-content-lg-center pt-2 pb-2">
+                    <div class="col">
+                        <button class="input-number" value="7">7</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-number" value="8">8</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-number" value="9">9</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator" value="×">×</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator font-size-32" id="opt-reset">CE</button>
+                    </div>
+                </div>
+                <!-- Row 3 -->
+                <div class="row justify-content-lg-center pt-2 pb-2">
+                    <div class="col">
+                        <button class="input-number" value="4">4</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-number" value="5">5</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-number" value="6">6</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator" value="-">-</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator font-size-20" id="opt-next">Next</button>
+                    </div>
+                </div>
+                <!-- Row 1 -->
+                <div class="row justify-content-lg-center pt-2 pb-2">
+                    <div class="col">
+                        <button class="input-number" value="1">1</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-number" value="2">2</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-number" value="3">3</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator" value="+">+</button>
+                    </div>
+                    <div class="col">
+                        <button class="input-operator" id="opt-calc">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center pb-3" id="footer">
+        <p>
+            <a href="https://github.com/maruskyve" target="_blank">Maruskyve</a>&nbsp; on
+            <a href="https://github.com/" target="_blank"><b><i></i>&nbsp;Github.com</b></a>
+        </p>
+    </div>
+</div>
+
+
+<!-- Custom JS -->
+<script src="../assets/js/jquery/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/calculator.js"></script>
+
+<!-- Backend Bundle JavaScript -->
+<script src="../assets/js/backend-bundle.min.js"></script>
+<!-- Chart Custom JavaScript -->
+<script src="../assets/js/customizer.js"></script>
+
+<script src="../assets/js/sidebar.js"></script>
+
+<!-- Flextree Javascript-->
+<script src="../assets/js/flex-tree.min.js"></script>
+<script src="../assets/js/tree.js"></script>
+
+<!-- Table Treeview JavaScript -->
+<script src="../assets/js/table-treeview.js"></script>
+
+<!-- SweetAlert JavaScript -->
+<script src="../assets/js/sweetalert.js"></script>
+
+<!-- Vectoe Map JavaScript -->
+<script src="../assets/js/vector-map-custom.js"></script>
+
+<!-- Chart Custom JavaScript -->
+<script src="../assets/js/chart-custom.js"></script>
+<script src="../assets/js/charts/01.js"></script>
+<script src="../assets/js/charts/02.js"></script>
+
+<!-- slider JavaScript -->
+<script src="../assets/js/slider.js"></script>
+
+<!-- Emoji picker -->
+<script src="../assets/vendor/emoji-picker-element/index.js" type="module"></script>
+
+
+<!-- app JavaScript -->
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

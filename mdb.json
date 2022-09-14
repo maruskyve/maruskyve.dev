@@ -1,0 +1,116 @@
+{
+  "repositories": [
+    {
+      "name": "FCMClustering",
+      "caption": "A Fuzzy C-Means code",
+      "stars": "3",
+      "url": "https://github.com/maruskyve/FCMClustering"
+    },
+    {
+      "name": "ImageProcessing",
+      "caption": "A lightweight improc module",
+      "stars": "3",
+      "url": "https://github.com/maruskyve/ImageProcessing"
+    },
+    {
+      "name": "ClassificationClustering",
+      "caption": "More Classification-Clustering module",
+      "stars": "4",
+      "url": "https://github.com/maruskyve/Classification-Clustering"
+    },
+    {
+      "name": "FCMClustering",
+      "caption": "A Fuzzy C-Means code",
+      "stars": "3",
+      "url": "https://github.com/maruskyve/FCMClustering"
+    },
+    {
+      "name": "ImageProcessing",
+      "caption": "A lightweight improc module",
+      "stars": "3",
+      "url": "https://github.com/maruskyve/ImageProcessing"
+    },
+    {
+      "name": "FCMClustering",
+      "caption": "A Fuzzy C-Means code",
+      "stars": "3",
+      "url": "https://github.com/maruskyve/FCMClustering"
+    },
+    {
+      "name": "ImageProcessing",
+      "caption": "A lightweight improc module",
+      "stars": "3",
+      "url": "https://github.com/maruskyve/ImageProcessing"
+    },
+    {
+      "name": "ClassificationClustering",
+      "caption": "More Classification-Clustering module",
+      "stars": "4",
+      "url": "https://github.com/maruskyve/Classification-Clustering"
+    },
+    {
+      "name": "ClassificationClustering",
+      "caption": "More Classification-Clustering module",
+      "stars": "4",
+      "url": "https://github.com/maruskyve/Classification-Clustering"
+    }
+  ],
+  "apps": [
+    {
+      "name": "Glew Calculator",
+      "advantage": "Simplest calculator",
+      "description": "Simple calculator which can be used to calculate basic math problem",
+      "stars": "4",
+      "logo_url": "assets/images/glew_calculator/glew_calc_icon.png",
+      "url": "app/calculator.html"
+    },
+    {
+      "name": "Test App 1",
+      "advantage": "Lipsum",
+      "description": "Lipsum dolor sit amet",
+      "stars": "2",
+      "logo_url": "assets/images/glew_calculator/glew_calc_icon.png",
+      "url": "app/calculator.html"
+    },
+    {
+      "name": "Test App 2",
+      "advantage": "Lipsum",
+      "description": "Lipsum dolor sit amet",
+      "stars": "3",
+      "logo_url": "assets/images/glew_calculator/glew_calc_icon.png",
+      "url": "app/calculator.html"
+    },
+    {
+      "name": "Test App 3",
+      "advantage": "Lipsum",
+      "description": "Lipsum dolor sit amet",
+      "stars": "3",
+      "logo_url": "assets/images/glew_calculator/glew_calc_icon.png",
+      "url": "app/calculator.html"
+    },
+    {
+      "name": "Test App 4",
+      "advantage": "Lipsum",
+      "description": "Lipsum dolor sit amet",
+      "stars": "3",
+      "logo_url": "assets/images/glew_calculator/glew_calc_icon.png",
+      "url": "app/calculator.html"
+    },
+    {
+      "name": "Test App 5",
+      "advantage": "Lipsum",
+      "description": "Lipsum dolor sit amet",
+      "stars": "3",
+      "logo_url": "assets/images/glew_calculator/glew_calc_icon.png",
+      "url": "app/calculator.html"
+    },
+    {
+      "name": "Test App 6",
+      "advantage": "Lipsum",
+      "description": "Lipsum dolor sit amet",
+      "stars": "3",
+      "logo_url": "assets/images/glew_calculator/glew_calc_icon.png",
+      "url": "app/calculator.html"
+    }
+  ]
+}

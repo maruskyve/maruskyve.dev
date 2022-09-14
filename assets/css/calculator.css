@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Product Sans";
+    src: url("../fonts/product_sans_regular.ttf");
+}
+
+/* Universal */
+/* Gutter (col spacing) */
+.gx-1 > * {
+    margin: 1%;
+}
+
+.gx-2 > * {
+    margin: 2%;
+}
+
+.gxh-1 > * {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.gxh-2 > * {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.horizontal-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Color */
+.text-green {
+    background: rgb(5, 227, 160);
+    background: linear-gradient(90deg, rgba(5, 227, 160, 1) 0%, rgba(9, 178, 128, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Variables */
+:root {
+    --input-number-font-size: 60px;
+    --input-operator-font-size: 60px;
+    --input-operator-sm-font-size: 30px;
+    --input-number-wh-size: 80px;
+    --input-operator-wh-size: 80px;
+    --input-operator-sm-wh-size: 40px;
+}
+
+/* Html Styling */
+body {
+    font-family: "Product Sans", serif;
+    background: rgb(239, 255, 245);
+    background: radial-gradient(circle, rgba(239, 255, 245, 1) 0%, rgba(176, 255, 214, 1) 100%);
+}
+
+
+#calc_card {
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(to right, #08EBA7, #08B682) border-box;
+    border-radius: 25px;
+    border: 3px solid transparent;
+}
+
+#calc_card_ornament_top {
+    background: rgb(12, 191, 138);
+    background: linear-gradient(90deg, rgb(8, 233, 166) 0%, rgb(8, 181, 129) 100%);
+    border-radius: 0 0 25px 25px;
+}
+
+.input-number {
+    font-size: var(--input-number-font-size);
+    font-weight: bold;
+    color: white;
+    width: var(--input-number-wh-size);
+    height: var(--input-number-wh-size);
+    background: rgb(9, 216, 154);
+    background: linear-gradient(90deg, rgba(9, 216, 154, 1) 0%, rgba(7, 155, 111, 1) 100%);
+    border: 0;
+    display: block;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.input-number:hover {
+    background: rgb(12, 191, 138);
+    background: linear-gradient(90deg, rgba(12, 191, 138, 1) 0%, rgba(8, 116, 84, 1) 100%);
+    transition: .1s;
+}
+
+.input-operator {
+    font-size: var(--input-operator-font-size);
+    font-weight: bold;
+    color: white;
+    width: var(--input-operator-wh-size);
+    height: var(--input-operator-wh-size);
+    background: rgb(7, 219, 206);
+    background: linear-gradient(90deg, rgba(7, 219, 206, 1) 0%, rgba(6, 158, 149, 1) 100%);
+    border: 0;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.input-operator:hover {
+    color: #07DBCE;
+    background: rgb(7, 219, 206);
+    background: linear-gradient(90deg, rgba(7, 219, 206, 1) 0%, rgba(6, 158, 149, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 50px;
+    border: 3px solid #07DBCE;
+    transition: .1s;
+}
+
+.input-operator-sm {
+    font-size: var(--input-operator-sm-font-size);
+    font-weight: bold;
+    color: white;
+    width: var(--input-operator-sm-wh-size);
+    height: var(--input-operator-sm-wh-size);
+    background: rgb(7, 219, 206);
+    background: linear-gradient(90deg, rgba(7, 219, 206, 1) 0%, rgba(6, 158, 149, 1) 100%);
+    border: 0;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.input-operator-sm:hover {
+    color: #07DBCE;
+    background: rgb(7, 219, 206);
+    background: linear-gradient(90deg, rgba(7, 219, 206, 1) 0%, rgba(6, 158, 149, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 50px;
+    border: 3px solid #07DBCE;
+    transition: .1s;
+}
+
+.input-shift {
+    font-size: 20px;
+    color: #08B984;
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(to right, #08EBA7, #08B682) border-box;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 5px;
+    transition: .25s;
+    transition-delay: .1s;
+}
+
+.input-shift:hover {
+    color: white;
+    background: rgb(5, 227, 160);
+    background: linear-gradient(90deg, rgba(5, 227, 160, 1) 0%, rgba(9, 178, 128, 1) 100%);
+    padding-left: 15px;
+    transition: .25s;
+    transition-delay: .1s;
+}
+
+.input-expression {
+    width: 100%;
+    font-size: 40px;
+    text-align: right;
+    color: #09B280;
+    border-radius: 50px;
+    border: 0;
+    padding: 25px 30px 25px 25px;
+}
+
+.input-expression:focus, .input-expression:hover {
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(to right, #08EBA7, #08B682) border-box;
+    border: 3px solid transparent;
+    box-shadow: none;
+}
+
+#copy-result {
+    color: #09B280;
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(to right, #08EBA7, #08B682) border-box;
+    border: 1px solid transparent;
+    box-shadow: none;
+    transition: .5s;
+}
+
+#copy-result:hover {
+    color: white;
+    background: rgb(5, 227, 160);
+    background: linear-gradient(90deg, rgba(5, 227, 160, 1) 0%, rgba(9, 178, 128, 1) 100%);
+    padding-right: 15px;
+}
+
+#footer a {
+    color: #1c1c1c;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+#footer a:hover {
+    color: white;
+    background-color: #1c1c1c;
+    border-radius: 25px;
+    padding: 5px 15px 5px 15px;
+    transition: .5s;
+}
+
